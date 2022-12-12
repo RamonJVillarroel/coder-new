@@ -15,15 +15,21 @@
         <div class="jumbotron">
             <h1>Login de Usuario</h1>
             <br>
-            <form action="/login" method="post" autocomplete="off">
+            <form action="/api/auth/login" method="post" autocomplete="off">
                 <div class="form-group">
-                    <label for="nombre">Ingrese su nombre</label>
-                    <input id="nombre" class="form-control" type="text" name="nombre" required>
+                    <label for="username">Ingrese su mail</label>
+                    <input id="username" class="form-control" type="text" name="username" required>
                 </div>
-                <button class="btn btn-success mt-3">Enviar</button>
-            </form>
+                <div class="form-group">
+                    <label for="password">contraseña</label>
+                    <input id="password" class="form-control" type="password" name="password" required>
+                </div>
+                <button class="btn btn-success mt-3">login</button>
+            </form>    
         </div>
     </div>
+
+
 </body>
 
 </html>
